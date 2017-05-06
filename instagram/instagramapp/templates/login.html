@@ -4,8 +4,8 @@
 <html>
   <head>
     <!--<link rel="stylesheet" type ="text/css" href="CRegistro.CSS">-->
-    <!--Head sirve para importar configuraciones-->
-    <title>Regístro</title>
+    <!--Head sirve para importar y configuraciones-->
+    <title>Inicio de sesion</title>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
 
   </head>
 
@@ -27,20 +27,14 @@
             <p class="h1" class="font-weight-bold"> Instagram </p>
             <a href="#" class="text-muted"> ¡Bienvenido! </a><br><br>
             <div class = "form-group">
-              <input class = "form-control" type = "text" placeholder = "Ingrese su Correo">
-            </div>
-            <div class = "form-group">
-              <input class = "form-control" type = "text" placeholder = "Ingrese su Nombre">
-            </div>
-            <div class = "form-group">
               <input class = "form-control" type = "text" placeholder = "Ingrese su Usuario">
             </div>
             <div class="form-group">
               <input class = "form-control" type = "password" placeholder="Ingrese su Contraseña">
             </div>
             <button type="button" class = "btn btn-warning" id="boton1">Registrate</button><br><br>
-            ¿Tienes una cuenta?<br>
-            <a href = "{% url 'login' %}" class="card-link">Entrar</a>
+            ¿No tienes una cuenta?<br>
+            <a href = "{% url 'registro' %}" class=card-link>Registrate</a>
             <br>
           </div>
         </form>
@@ -51,7 +45,7 @@
       <img src="{% static 'images/appstore1.png' %}" id="img1"><br>
     <a/>
     <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=es">
-      <img src="{% static 'images/googleplay1.png' %}" id="img2"><br>
+        <img src="{% static 'images/googleplay1.png' %}" id="img2"><br>
     </a>
     </center>
   </body>
