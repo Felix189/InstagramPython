@@ -1,0 +1,61 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!--<link rel="stylesheet" type ="text/css" href="CRegistro.CSS">-->
+    <!--Head sirve para importar y configuraciones-->
+    <title>Home</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+  </head>
+  <body>
+    <center>
+      <ul class="nav nav-fill ">
+        <li class="nav-item">
+          <button type="button" class="btn btn-secondary fa fa-home"></button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-secondary fa fa-search"> </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-secondary fa fa-plus-square-o"></button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-secondary fa fa-heart-o"></button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-secondary fa fa-user-o"></button>
+        </li>
+      </ul>
+      <br>
+      <div class="card" style="width: 800px">
+
+
+
+
+
+
+      <div class="card" style="width: 800px;">
+        <center>
+          <img src="{% static 'images/profileimage.png' %}" id="userphoto">NombreUsuario
+          <br>
+          <img id="photo" src="{% static 'images/profileimage.png' %}" alt="Card image cap">
+        </center>
+        <div class="card-block">
+          <h4 class="card-title">X Likes</h4>
+          <p class="card-text">Username/Comentario</p>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
