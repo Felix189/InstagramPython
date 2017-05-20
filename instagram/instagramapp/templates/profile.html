@@ -5,7 +5,7 @@
   <head>
     <!--<link rel="stylesheet" type ="text/css" href="CRegistro.CSS">-->
     <!--Head sirve para importar y configuraciones-->
-    <title>Home</title>
+    <title>Profile</title>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
 
   </head>
   <body>
@@ -31,26 +31,12 @@
           <button type="button" class="btn btn-secondary fa fa-plus-square-o"></button>
         </li>
         <li class="nav-item">
-        <a class="btn btn-secondary fa fa-heart-o" ></a>
+          <button type="button" class="btn btn-secondary fa fa-heart-o"></button>
         </li>
         <li class="nav-item">
           <a class="btn btn-secondary fa fa-user-o" href="{% url 'profile' %}"></a>
         </li>
       </ul>
-      <br>
-      <div class="card" style="width: 800px;">
-          <center>
-          <img src="{% static 'images/profileimage.png' %}" id="userphoto">
-          <p class="card-text" align=left> NombreUsuario </p>
-          <br>
-          <img id="photo" src="{% static 'images/profileimage.png' %}" alt="Card image cap">
-        </center>
-        <div class="card-block">
-          <h4 class="card-title" align=left> X Likes </h4>
-          <p class="card-text" align=left> Username/Comentario </p>
-          <p class="card-text" align=left> Comentarios </p>
-        </div>
-      </div>
     </center>
   </body>
 </html>

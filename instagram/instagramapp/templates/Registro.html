@@ -18,27 +18,29 @@
   </head>
 
   <body>
+      <form action="{% url 'crear_usuario' %}" method='POST'>
+        {% csrf_token %}
     <center>
     <br>
     <div class="card" style="width: 20rem;">
       <div class="card-block">
         <form>
           <div class = "form-group"id="Formulario">
-            <p class="h1" class="font-weight-bold"> Instagram </p>
+            <p class="h1" class="font-weight-bold"> Overgram </p>
             <a href="#" class="text-muted"> ¡Bienvenido! </a><br><br>
             <div class = "form-group">
-              <input class = "form-control" type = "text" placeholder = "Ingrese su Correo">
+              <input name="email" class = "form-control" type = "text" placeholder = "Ingrese su Correo">
             </div>
             <div class = "form-group">
-              <input class = "form-control" type = "text" placeholder = "Ingrese su Nombre">
+              <input name="name"class = "form-control" type = "text" placeholder = "Ingrese su Nombre">
             </div>
             <div class = "form-group">
-              <input class = "form-control" type = "text" placeholder = "Ingrese su Usuario">
+              <input name="user" class = "form-control" type = "text" placeholder = "Ingrese su Usuario">
             </div>
             <div class="form-group">
-              <input class = "form-control" type = "password" placeholder="Ingrese su Contraseña">
+              <input name="password" class = "form-control" type = "password" placeholder="Ingrese su Contraseña">
             </div>
-            <button type="button" class = "btn btn-warning" id="boton1">Registrate</button><br><br>
+            <button class = "btn btn-warning" id="boton1">Registrate</button><br><br>
             ¿Tienes una cuenta?<br>
             <a href = "{% url 'login' %}" class="card-link">Entrar</a>
             <br>
