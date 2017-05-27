@@ -22,17 +22,19 @@
     <br>
     <div class="card" style="width: 20rem;">
       <div class="card-block">
+        <form action'{% url 'login' %}' method = 'POST'>
+          {% csrf_token %}
         <form>
           <div class = "form-group"id="Formulario">
             <p class="h1" class="font-weight-bold"> Overgram </p>
             <a href="#" class="text-muted"> ¡Bienvenido! </a><br><br>
             <div class = "form-group">
-              <input class = "form-control" type = "text" placeholder = "Ingrese su Usuario">
+              <input class = "form-control" name ="password" type = "text" placeholder = "Ingrese su Usuario">
             </div>
             <div class="form-group">
-              <input class = "form-control" type = "password" placeholder="Ingrese su Contraseña">
+              <input class = "form-control" name = "username" type = "password" placeholder="Ingrese su Contraseña">
             </div>
-            <a class = "btn btn-warning" href="{% url 'home' %}" id="boton1">Inicia Sesion</a><br><br>
+            <button action "{% url 'home' %}" class = "btn btn-warning" id="boton1">Inicia Sesion</button><br><br>
             ¿No tienes una cuenta?<br>
             <a href = "{% url 'registro' %}" class=card-link>Registrate</a>
             <br>

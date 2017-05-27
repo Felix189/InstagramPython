@@ -19,7 +19,7 @@
 
   <body>
       <form action="{% url 'crear_usuario' %}" method='POST'>
-        {% csrf_token %}
+      {% csrf_token %}
     <center>
     <br>
     <div class="card" style="width: 20rem;">
@@ -35,10 +35,10 @@
               <input name="name"class = "form-control" type = "text" placeholder = "Ingrese su Nombre">
             </div>
             <div class = "form-group">
-              <input name="user" class = "form-control" type = "text" placeholder = "Ingrese su Usuario">
+              <input name="user" class = "form-control" name = "username" type = "text" placeholder = "Ingrese su Usuario">
             </div>
             <div class="form-group">
-              <input name="password" class = "form-control" type = "password" placeholder="Ingrese su Contraseña">
+              <input name="password" class = "form-control" name ="password" type = "password" placeholder="Ingrese su Contraseña">
             </div>
             <button class = "btn btn-warning" id="boton1">Registrate</button><br><br>
             ¿Tienes una cuenta?<br>
