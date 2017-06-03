@@ -5,7 +5,7 @@
   <head>
     <!--<link rel="stylesheet" type ="text/css" href="CRegistro.CSS">-->
     <!--Head sirve para importar y configuraciones-->
-    <title>Profile</title>
+    <title>Upload</title>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -37,18 +37,12 @@
           <a class="btn btn-secondary fa fa-user-o" href="{% url 'profile' %}"></a>
         </li>
       </ul>
-      <div class="card" style="width: 800px;">
-        <div class="card-block">
-          <img src="{% static 'images/profileimage.png' %}" class="rounded-circle" id="userphoto">
-          <br>
-          <h4 class="card-title" id="textuser">User</h4>
-          <p class="card-text" align=right> followers/photos/follows</p>
-
-    </div>
-  </div>
-    <img id="photo" src="{% static 'images/grid.png' %}" >
-    <br>
-        <a href = "{% url 'logout' %}" class="card-link">Cerrar Sesion</a>
+      <br>
+      <br>
+      <div class="form-group">
+   <label for="exampleInputFile">Upload your photo</label>
+   <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+ </div>
     </center>
   </body>
 </html>

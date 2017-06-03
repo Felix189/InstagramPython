@@ -28,7 +28,7 @@
           <button type="button" class="btn btn-secondary fa fa-search"> </button>
         </li>
         <li class="nav-item">
-          <button type="button" class="btn btn-secondary fa fa-plus-square-o"></button>
+          <a class="btn btn-secondary fa fa-plus-square-o" href="{% url 'upload' %}"></a>
         </li>
         <li class="nav-item">
         <a class="btn btn-secondary fa fa-heart-o" ></a>
@@ -40,7 +40,7 @@
       <br>
       <div class="card" style="width: 800px;">
           <center>
-          <img src="{% static 'images/profileimage.png' %}" id="userphoto">
+          <img src="{% static 'images/profileimage.png' %}" class="rounded-circle" id="userphoto">
           <p class="card-text" align=left> NombreUsuario </p>
           <br>
           <img id="photo" src="{% static 'images/profileimage.png' %}" alt="Card image cap">
@@ -51,6 +51,7 @@
           <p class="card-text" align=left> Comentarios </p>
         </div>
       </div>
+        <a href = "{% url 'logout' %}" class="card-link">Cerrar Sesion</a>
     </center>
   </body>
 </html>
